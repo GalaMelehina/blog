@@ -1,0 +1,47 @@
+.main__content {
+    display: flex;
+    column-gap: 30px;
+}
+
+.main__blogs {
+    margin-bottom: 85px;
+}
+
+.main__info {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.main__pagination {
+    margin-left: auto;
+    margin-right: 300px;
+    
+    a {
+        color: inherit;
+        font-size: 18px;
+        font-weight: 700;
+        transition: 0.2s ease-in;
+
+        &:hover {
+            color: #e84c50;
+        }
+    }
+
+    a:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+    
+.main__info-link {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: inherit;
+    transition: 0.2s ease-in;
+
+    &:hover {
+        color: #e84c50;
+    }
+}
+

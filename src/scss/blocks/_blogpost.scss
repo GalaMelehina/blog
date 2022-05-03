@@ -1,0 +1,36 @@
+.blogpost {
+    width: 870px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #dde2e7;
+}
+
+.blogpost__title {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.blogpost__subtitle {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.blogpost__img {
+    margin-bottom: 40px;
+}
+
+.blogpost__text {
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.blogpost__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blogpost__icons {
+    display: flex;
+    column-gap: 20px;
+}

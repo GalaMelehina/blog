@@ -1,0 +1,47 @@
+include ./../mixins/blogpost.pug
+include ./../mixins/widget-title.pug
+include ./../mixins/widget-post.pug
+include ./../mixins/instagram-img.pug
+
+.container 
+    .main__content 
+        .main__blogs 
+            +blogpost("Austin DIY sriracha polaroid sartorial la croix.", "december 26, 2019 — 5 comments", "./../img/posts-preview/img-01.jpg", "Austin DIY sriracha polaroid sartorial la croix. Air plant vexillologist tilde listicle try-hard tousled. Drinking vinegar flexitarian tumblr, chia aesthetic lyft yuccie. Vegan jean shorts swag, single-origin coffee beard quinoa street art activated charcoal chartreuse whatever. Ramps mlkshk hammock, disrupt butcher poutine ethical prism photo booth keffiyeh franzen edison bulb hoodie master cleanse. Gastropub tofu schlitz, coloring book 3 wolf moon ennui gochujang tousled meggings hot chicken listicle. YOLO plaid fanny pack jean shorts pop-up truffaut tousled kombucha salvia whatever fixie tacos swag man bun migas.")
+            +blogpost("Vinyl hexagon tbh selvage chambray street art.", "december 12, 2019 — 0 comments", "./../img/posts-preview/img-02.jpg", "Hashtag kickstarter aesthetic squid franzen wayfarers. Mlkshk flannel listicle, tumblr iceland poutine cold-pressed marfa. Microdosing deep v af flexitarian bushwick marfa shaman cronut, put a bird on it tbh viral. Pug kitsch organic schlitz actually synth iPhone forage cornhole thundercats hammock yuccie austin la croix. Pork belly chambray cliche hot chicken air plant")
+            +blogpost("Edison bulb raw denim 3 wolf moon shaman mustache taxidermy. Cliche disrupt slow-carb chicharrones.", "december 08, 2019 — 2 comments", "./../img/posts-preview/img-03.jpg", "Vegan jean shorts swag, single-origin coffee beard quinoa street art activated charcoal chartreuse whatever. Ramps mlkshk hammock, disrupt butcher poutine ethical prism photo booth keffiyeh franzen edison bulb hoodie master cleanse. Gastropub tofu schlitz, coloring book 3 wolf moon ennui gochujang tousled meggings hot chicken listicle.")
+            +blogpost("Gastropub ennui keytar, plaid meggings marfa edison bulb pour-over austin enamel pin.", "November 28, 2019 — 12 comments", "./../img/posts-preview/img-04.jpg", "Meh try-hard raw denim, sustainable readymade yuccie irony direct trade vape gastropub swag. Vaporware gochujang blue bottle, dreamcatcher taxidermy iceland deep v before they sold out dolor meh cillum live-edge. Aliqua celiac brunch chartreuse irony ea. Fixie chillwave cloud bread +1.")
+            +blogpost("Minim ad austin tousled gluten-free.", "november 17, 2019 — 22 comments", "./../img/posts-preview/img-05.jpg", "Nulla adipisicing salvia mlkshk nostrud marfa fam literally ugh sriracha umami ullamco beard. Wolf try-hard gochujang exercitation disrupt sriracha. Magna ad gastropub mollit pok pok. Waistcoat authentic fixie, XOXO messenger bag tumblr synth nostrud jean shorts distillery. Try-hard copper mug schlitz, readymade craft beer labore meggings mlkshk chicharrones keffiyeh iPhone photo booth cred man bun.")
+            .main__info 
+                .main__pagination 
+                    a(href="#") 1
+                    a(href="#") 2
+                    a(href="#") 3
+                a(href="#").main__info-link older posts
+        aside.main__blocks 
+            .block__recent
+                +widget-title("Recent posts") 
+                +widget-post("./../img/small-thumbs/01.jpg", "Austin DIY sriracha polaroid sartorial la croix.", "december 26, 2019 — 5 comments")
+                +widget-post("./../img/small-thumbs/02.jpg", "Vinyl hexagon tbh selvage chambray street art.", "december 12, 2019 — 0 comments")
+                +widget-post("./../img/small-thumbs/03.jpg", "Edison bulb raw denim 3 wolf moon shaman mustache taxidermy. Cliche disrupt slow-carb chicharrones.", "december 08, 2019 — 2 comments")
+                +widget-post("./../img/small-thumbs/04.jpg", "Gastropub ennui keytar, plaid meggings marfa edison bulb pour-over austin enamel pin.", "November 28, 2019 — 12 comments")
+                +widget-post("./../img/small-thumbs/05.jpg", "Minim ad austin tousled gluten-free. ", "november 17, 2019 — 22 comments")
+            .block__popular
+                +widget-title("Popular posts") 
+                +widget-post("./../img/small-thumbs/01.jpg", "Austin DIY sriracha polaroid sartorial la croix.", "december 26, 2019 — 5 comments")
+                +widget-post("./../img/small-thumbs/02.jpg", "Vinyl hexagon tbh selvage chambray street art.", "december 12, 2019 — 0 comments")
+                +widget-post("./../img/small-thumbs/03.jpg", "Edison bulb raw denim 3 wolf moon shaman mustache taxidermy. Cliche disrupt slow-carb chicharrones.", "december 08, 2019 — 2 comments")
+                +widget-post("./../img/small-thumbs/04.jpg", "Gastropub ennui keytar, plaid meggings marfa edison bulb pour-over austin enamel pin.", "November 28, 2019 — 12 comments")
+                +widget-post("./../img/small-thumbs/05.jpg", "Minim ad austin tousled gluten-free. ", "november 17, 2019 — 22 comments")
+            .block__instagram
+                +widget-title("Instagram")
+                .block__instagram-img 
+                    +instagram-img("./../img/instagram/insta-01.jpg")
+                    +instagram-img("./../img/instagram/insta-02.jpg")
+                    +instagram-img("./../img/instagram/insta-03.jpg")
+                    +instagram-img("./../img/instagram/insta-04.jpg")
+                    +instagram-img("./../img/instagram/insta-05.jpg")
+                    +instagram-img("./../img/instagram/insta-06.jpg")
+                    +instagram-img("./../img/instagram/insta-07.jpg")
+                    +instagram-img("./../img/instagram/insta-08.jpg")
+                    +instagram-img("./../img/instagram/insta-09.jpg")
+                    +instagram-img("./../img/instagram/insta-10.jpg")                    

@@ -1,0 +1,50 @@
+html {
+    min-height: 100vh; /* sticky footer */
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100vh; /* sticky footer */
+	display: flex; /* sticky footer */
+	flex-direction: column; /* sticky footer */
+
+	font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+	font-weight: normal;
+	color: #000;
+    line-height: 1.3;
+
+    text-rendering: optimizeSpeed;
+    //text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+body > * {
+	flex-shrink: 0; /* sticky footer */
+}
+
+/* Grid styles */
+
+.container {
+	max-width: 1170px;
+    width: 100%;
+	margin-left: auto;
+    margin-right: auto;
+
+    &--fluid {
+        max-width: unset;
+    }
+
+    &--no-padding {
+        padding: 0;
+    }
+}
+
+/* Utility */
+
+.none {
+	display: none !important;
+}
