@@ -16,3 +16,11 @@
         height: 100px;
     }
 }
+
+.widget-insta {
+    transition: 0.2s ease-in;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}

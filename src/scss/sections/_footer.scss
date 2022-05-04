@@ -1,17 +1,20 @@
 .footer {
     margin-top: auto;
-    padding-top: 70px;
-    padding-bottom: 85px;
-    background-color: #dde2e7;
 }
 
 .footer__info {
+    padding-top: 60px;
+    padding-bottom: 90px;
+    background-color: #dde2e7;
+}
+
+.footer__block {
     display: flex;
     justify-content: flex-start;
     column-gap: 180px;
 } 
 
-.footer__block {
+.footer__widget {
     display: flex;
 }
 
@@ -24,6 +27,11 @@
     font-size: 16px;
     line-height: 1.3;
     color: #8e9399;
+    transition: 0.2s ease-in;
+
+    &:hover {
+        color: #0000ff;
+    }
 }
 
 .footer__list li:not(:last-child) {
@@ -44,14 +52,14 @@
 }
 
 .footer__copyright {
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding-top: 23px;
+    padding-bottom: 23px;
     background-color: #e8ebee;
     text-align: center;
 
     p {
         font-size: 14px;
-        line-height: 1.3;
+        line-height: 1;
         color: #b7babe;
     }
 }

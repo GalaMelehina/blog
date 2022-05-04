@@ -1,8 +1,11 @@
 .widget-title {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
     border: 1px solid #dde2e7;
+    text-decoration: none;
+    color: #000;
 }
 
 .widget-post {
@@ -17,20 +20,27 @@
 
 .widget-post__img {
     margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 84px;
-    height: 80px;
-    border-radius: 50%;
-    overflow: hidden;
 
     img {
+        margin-left: auto;
+        margin-right: auto;
         max-width: none;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
     }
 }
 
 .widget-post__title {
     margin-bottom: 30px;
+    color: #000;
+    transition: 0.2s ease-in;
+
+    &:hover {
+        color: rgb(0, 0, 255);
+        text-decoration: underline;
+    }
 }
 
 .widget-post__subtitle {

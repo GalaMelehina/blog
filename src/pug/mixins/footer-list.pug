@@ -1,0 +1,5 @@
+mixin footer-list(listItems) 
+    ul.footer__list 
+        each item in listItems
+            li 
+                a(href= item.link).footer__list-item #{item.title}
