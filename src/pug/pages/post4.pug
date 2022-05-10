@@ -1,0 +1,22 @@
+extends ./../layouts/main.pug
+
+block variables
+    - const title = jsonData.innerPageTitle;
+
+block content
+    main.inner-page 
+        +post-page("Gastropub ennui keytar, plaid meggings marfa edison bulb pour-over austin enamel pin.", "december 26, 2019 — 5 comments", "img-04.jpg")
+            p Lorem ipsum dolor amet poke dreamcatcher flexitarian, marfa ennui listicle viral meh squid schlitz try-hard bushwick hammock blog man braid. Kickstarter actually four loko sriracha. Aesthetic meditation vaporware, kogi cold-pressed artisan semiotics craft beer mlkshk godard chia poke. Lomo ethical activated charcoal deep v, iPhone ugh edison bulb lumbersexual typewriter pickled vaporware af four loko hoodie craft beer. YOLO fashion axe vaporware, affogato tote bag godard DIY marfa tilde green juice. Pinterest gluten-free try-hard gochujang.
+            p Copper mug wayfarers swag biodiesel hoodie iPhone salvia drinking vinegar, blog deep v. Flannel bicycle rights chicharrones tacos craft beer blog messenger bag. Vexillologist brooklyn wolf raclette celiac readymade gluten-free. Tote bag hella schlitz sartorial. Aesthetic selvage skateboard etsy raclette. Taxidermy austin synth pork belly offal waistcoat.
+            p Freegan glossier whatever banh mi lumbersexual affogato pork belly pop-up prism forage swag helvetica 90's XOXO direct trade. Shabby chic distillery bushwick hella food truck. Before they sold out palo santo organic shabby chic four loko farm-to-table 8-bit bitters. Green juice pug migas cloud bread, 90's kickstarter stumptown shabby chic try-hard typewriter. Locavore keffiyeh kickstarter fashion axe vaporware, fam vexillologist chambray +1 gastropub man braid leggings aesthetic literally lumbersexual. Drinking vinegar tattooed enamel pin beard man bun occupy.
+            p Tumblr wolf whatever single-origin coffee, unicorn you probably haven't heard of them raw denim narwhal aesthetic gochujang air plant. 8-bit poutine dreamcatcher, mustache artisan subway tile viral. Air plant shoreditch forage selvage, seitan photo booth 3 wolf moon health goth raclette edison bulb wolf. Street art fixie squid distillery live-edge pop-up narwhal. Cray skateboard pour-over actually franzen, venmo echo park tote bag pork belly YOLO meditation disrupt fam. Palo santo YOLO fam succulents put a bird on it. Kogi cardigan art party truffaut small batch, green juice skateboard banh mi seitan organic.
+            p Gastropub scenester trust fund skateboard man bun, truffaut pinterest brunch swag whatever hoodie. Wayfarers try-hard crucifix, neutra paleo yr williamsburg. Austin heirloom stumptown migas art party freegan prism cold-pressed air plant tattooed keytar plaid. Kogi craft beer blue bottle tote bag lyft. Banh mi truffaut man bun +1 VHS activated charcoal, everyday carry whatever glossier edison bulb cred blue bottle gastropub. Umami typewriter celiac, blue bottle flexitarian 3 wolf moon flannel pabst gentrify four dollar toast vinyl shabby chic enamel pin cardigan. Trust fund artisan raclette four dollar toast synth, umami scenester.
+        +comment-form("Comment it:")
+        .comments
+            .comments__title 
+                h2.title-2 Other comments:
+            +comment-card("./img/users/user-01.jpg", "Nina Ricci", "Locavore keffiyeh kickstarter fashion axe vaporware, fam vexillologist chambray +1 gastropub man braid leggings aesthetic literally lumbersexual.") 
+            +comment-card('', "Joe Campbel", "Tumblr wolf whatever single-origin coffee, unicorn you probably haven't heard of them raw denim narwhal aesthetic gochujang air plant.") 
+            +comment-card('', "Luke Besson", "Umami typewriter celiac, blue bottle flexitarian 3 wolf moon flannel pabst gentrify four dollar toast vinyl shabby chic enamel pin cardigan.") 
+            +comment-card("./img/users/user-02.jpg", "Tim Hendrix", "Wayfarers try-hard crucifix, neutra paleo yr williamsburg. Austin heirloom stumptown migas art party freegan prism cold-pressed air plant tattooed keytar plaid.") 
+            +comment-card("./img/users/user-03.jpg", "Walt Bezos", "Before they sold out palo santo organic shabby chic four loko farm-to-table 8-bit bitters. Green juice pug migas cloud bread, 90's kickstarter stumptown shabby chic try-hard typewriter.") 

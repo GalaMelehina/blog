@@ -1,0 +1,33 @@
+{
+    "footerList1": [
+        {
+            "title": "Latest Posts", 
+            "link": "#" 
+        },
+        { 
+            "title": "Popular Posts",
+            "link": "#" 
+        }
+    ],
+    "footerList2": [
+        {
+            "title": "Search", 
+            "link": "#" 
+        },
+        { 
+            "title": "Contact Information",
+            "link": "#" 
+        }
+    ],
+    "footerList3": [
+        {
+            "title": "Privacy Policy", 
+            "link": "#" 
+        },
+        { 
+            "title": "Terms of Use",
+            "link": "#" 
+        }
+    ]
+}
+

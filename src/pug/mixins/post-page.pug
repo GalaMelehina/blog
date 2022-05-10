@@ -1,0 +1,10 @@
+mixin post-page(title, subtitle, img)
+    .post 
+        .post__title 
+            h1.title-2 #{title}
+        .post__subtitle 
+            h3.title-3 #{subtitle}
+        .post__img 
+            img(src="./img/posts-preview/" + img, alt="Photo")
+        .post__text 
+            block

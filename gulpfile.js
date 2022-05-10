@@ -10,6 +10,7 @@ const gcmq = require('gulp-group-css-media-queries');
 const sassGlob = require('gulp-sass-glob');
 const pug = require('gulp-pug');
 const del = require('del');
+const fs = require('fs');
 
 // Сборка pug-файлов
 task('pug', function(callback) {
@@ -24,7 +25,11 @@ task('pug', function(callback) {
             })
         }) )
         .pipe( pug({
-            pretty: true
+            pretty: true,
+            locals: {
+                jsonData: JSON.parse(fs.readFileSync('./src/data/html-data.json', 'utf8')),
+                footerList: JSON.parse(fs.readFileSync('./src/data/footer-list.json', 'utf8')),
+            }
         }) )
         .pipe( dest('./build/') )
         .pipe( browserSync.stream() );
@@ -82,7 +87,7 @@ task('watch', function () {
 
     watch('./src/scss/**/*.scss', parallel('scss'));
 
-    watch('./src/pug/**/*.pug', parallel('pug'));
+    watch(['./src/pug/**/*.pug', './src/data/**/*.json'], parallel('pug'));
 
     watch('./src/img/**/*.*', parallel('copy:img'));
 

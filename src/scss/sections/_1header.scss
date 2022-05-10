@@ -6,19 +6,6 @@
     border-bottom: 1px solid #dde2e7;
 }
 
-.header__icons {
-    display: flex;
-    justify-content: center;
-    column-gap: 30px;
-
-    a {
-        svg {
-            max-width: 24px;
-            height: 24px;
-        }
-    }
-}
-
 .header__title {
     text-align: center;
 }

@@ -1,0 +1,12 @@
+mixin comment-form(title)
+    form.comment-form(action="#")
+        .comment-form__title 
+            h2.title-2 #{title}
+        .comment-form__message 
+            textarea(name="message") Flannel bicycle rights chicharrones tacos craft beer blog messenger bag. Vexillologist brooklyn wolf raclette celiac readymade gluten-free. 
+        .comment-form__items 
+            input(name="name" type="text" placeholder="Your name").comment-form__item
+            input(name="email" type="email" placeholder="Email").comment-form__item
+            input(name="homepage" type="text" placeholder="Homepage").comment-form__item
+        .comment-form__button
+            +button-post("Comment", link)

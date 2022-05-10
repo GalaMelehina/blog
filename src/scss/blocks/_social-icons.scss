@@ -1,0 +1,12 @@
+.social-icons {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+
+    a {
+        img {
+            max-width: 24px;
+            height: 24px;
+        }
+    }
+}

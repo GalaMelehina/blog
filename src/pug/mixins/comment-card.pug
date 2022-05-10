@@ -1,0 +1,7 @@
+mixin comment-card(img, name, text)
+    .comment-card
+        .comment-card__header
+            if img !==''
+                img(src= img, alt="Photo")
+            span #{name}
+        p.comment-card__text #{text}
